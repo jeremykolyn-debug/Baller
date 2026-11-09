@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baller | Rainbow Six Siege Tournaments</title>
+  <meta name="description" content="Baller hosts competitive Rainbow Six Siege tournaments in North America: the Baller Invitational, Baller Open League and Baller Tournament Series.">
+  <meta name="theme-color" content="#07080b">
+  <meta property="og:title" content="Baller | Rainbow Six Siege Tournaments">
+  <meta property="og:description" content="Competitive R6 Siege tournaments: invitationals, open leagues and one-day cups.">
+  <meta property="og:image" content="assets/img/baller-logo.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@BallerR6X">
+  <link rel="icon" type="image/png" href="assets/img/baller-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="./" class="brand" aria-label="Baller home">
+        <img src="assets/img/baller-logo.png" alt="">
+        <span class="display brand-word">Baller</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="#events">Events</a>
+        <a href="#champions">Champions</a>
+        <a href="#about">About</a>
+        <a href="#crew">Crew</a>
+        <a href="#partners">Partners</a>
+        <a class="btn" href="https://discord.gg/qHVsgECBrQ" target="_blank" rel="noopener">Join Discord</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="fx-grid"></div>
+      <div class="hero-stripes"></div>
+      <div class="fx-glow g1"></div>
+      <div class="fx-glow g2"></div>
+
+      <div class="wrap">
+        <div class="hero-inner">
+          <div>
+            <span class="eyebrow">Rainbow Six Siege · North America</span>
+            <h1 class="display">
+              <span class="line">Compete.</span>
+              <span class="line">Clutch.</span>
+              <span class="line grad-text">Ball Out.</span>
+            </h1>
+            <p class="hero-lead">Baller runs competitive Rainbow Six Siege tournaments: invite-only showdowns, season-long open leagues and one-day cups. Every event gets real prize money, dedicated admins and a live broadcast.</p>
+            <div class="hero-cta">
+              <a class="btn" href="#events">View Events
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <a class="btn btn-ghost" href="https://discord.gg/qHVsgECBrQ" target="_blank" rel="noopener"><span>Register Your Team</span></a>
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="ring"></div>
+            <div class="ring r2"></div>
+            <img src="assets/img/baller-logo.png" alt="Baller logo">
+          </div>
+        </div>
+
+        <div class="hero-stats" id="stats">
+          <!-- filled by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TICKER ================= -->
+    <div class="ticker" aria-label="Recent grand final results">
+      <div class="ticker-track" id="ticker"></div>
+    </div>
+
+    <!-- ================= EVENTS ================= -->
+    <section class="section" id="events">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Tournaments</span>
+            <h2 class="display">Our <span class="grad-text">Events</span></h2>
+          </div>
+          <p>Three formats so far: an invite-only bracket, an open Swiss league and a one-day cup. Click any event for the full bracket, placements and broadcast credits.</p>
+        </div>
+
+        <div class="events-grid" id="events-grid"></div>
+
+        <div class="next-card reveal">
+          <div>
+            <span class="eyebrow">Up Next</span>
+            <h3 class="display">Season 2 is <span class="grad-text">loading…</span></h3>
+            <p>More Baller events are on the way. Join the Discord and follow <b>@BallerR6X</b> so you see sign-ups, dates and prize pools as soon as they're announced.</p>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://discord.gg/qHVsgECBrQ" target="_blank" rel="noopener">Join Discord</a>
+            <a class="btn btn-ghost" href="https://x.com/BallerR6X" target="_blank" rel="noopener"><span>Follow on X</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHAMPIONS ================= -->
+    <section class="section champions" id="champions">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Hall of Champions</span>
+            <h2 class="display">Crowned at <span class="grad-text">Baller</span></h2>
+          </div>
+          <p>Every Baller title so far, with the roster that won it, the grand final score and the event MVP.</p>
+        </div>
+        <div class="champ-grid" id="champ-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Why Baller</span>
+            <h2 class="display">Built for <span class="grad-text">the grind</span></h2>
+          </div>
+          <p>Baller started in 2025 to give North American Siege teams well-run events with real stakes, from established rosters down to five-stacks entering their first bracket.</p>
+        </div>
+        <div class="features reveal">
+          <div class="feature">
+            <div class="display idx">01</div>
+            <h3 class="display">Real Prize Pools</h3>
+            <p>Every Baller event has had a cash prize, from $400 cups to a $1,000 invitational. Results are tracked on Liquipedia.</p>
+          </div>
+          <div class="feature">
+            <div class="display idx">02</div>
+            <h3 class="display">Live Broadcasts</h3>
+            <p>Featured matches are cast live with a full crew of commentators, observers and producers, including partner streams on SiegeDoubleShot.</p>
+          </div>
+          <div class="feature">
+            <div class="display idx">03</div>
+            <h3 class="display">Run Right</h3>
+            <p>Dedicated admins, clear formats, map veto and brackets hosted on OPL. Teams know what they're signing up for and when they play.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CREW ================= -->
+    <section class="section" id="crew" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">The Team</span>
+            <h2 class="display">Behind the <span class="grad-text">Desk</span></h2>
+          </div>
+          <p>The admins and producers who run Baller events, and the casters who put them on air.</p>
+        </div>
+        <div class="crew-grid reveal" id="crew-grid"></div>
+        <p class="talent-strip reveal" id="talent-strip"></p>
+      </div>
+    </section>
+
+    <!-- ================= PARTNERS ================= -->
+    <section class="section" id="partners" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Partners</span>
+            <h2 class="display">Powered <span class="grad-text">Together</span></h2>
+          </div>
+          <p>The organizations that have co-hosted, sponsored and broadcast Baller events. Interested in partnering? Reach out on Discord or X.</p>
+        </div>
+        <div class="partners reveal" id="partners-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-band">
+      <div class="fx-grid"></div>
+      <div class="fx-glow"></div>
+      <div class="wrap cta-inner reveal">
+        <span class="eyebrow">Your Team Next</span>
+        <h2 class="display">Ready to <span class="grad-text">Ball?</span></h2>
+        <p>Sign-ups, schedules, match results and announcements all run through the Baller Discord.</p>
+        <div class="hero-cta" style="justify-content:center">
+          <a class="btn" href="https://discord.gg/qHVsgECBrQ" target="_blank" rel="noopener">Join the Discord</a>
+          <a class="btn btn-ghost" href="https://x.com/BallerR6X" target="_blank" rel="noopener"><span>@BallerR6X</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
