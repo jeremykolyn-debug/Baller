@@ -294,12 +294,9 @@ window.BALLER = {
 
   staff: [
     { name: "T0X", role: "Founder · Tournament Director" },
-    { name: "Brookeana", role: "Tournament Admin" },
-    { name: "Swifted", role: "Tournament Admin" },
-    { name: "Drewdude7", role: "Tournament Admin" },
-    { name: "Jaz", role: "Tournament Admin" },
     { name: "Oreo", role: "Admin · Producer · Caster" },
-    { name: "SiNOTWTCH", role: "Producer · Caster" },
-    { name: "Ghoulia", role: "Tournament Admin" },
   ],
+
+  // Shown as "On the call" under the crew on the home page
+  casters: ["WhiskeyRun", "WhiskeyGlitter", "ZekVexol", "SiNOTWTCH"],
 };

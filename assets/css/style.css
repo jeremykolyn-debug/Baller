@@ -221,14 +221,13 @@ a { color: inherit; text-decoration: none; }
   position: relative; overflow: hidden;
   background: var(--grad);
   color: #140a00;
-  transform: skewY(-1.2deg);
-  margin: -10px 0 0;
   z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, .25);
+  box-shadow: 0 10px 40px -10px rgba(255, 138, 31, .45);
 }
 .ticker-track {
   display: flex; width: max-content; gap: 0;
   animation: ticker 40s linear infinite;
-  transform: skewY(1.2deg);
 }
 .ticker:hover .ticker-track { animation-play-state: paused; }
 .ticker-item {
@@ -239,7 +238,7 @@ a { color: inherit; text-decoration: none; }
 }
 .ticker-item .tag { font-size: 12px; letter-spacing: .16em; padding: 3px 8px; background: #140a00; color: var(--gold); font-style: normal; }
 .ticker-item .x { opacity: .5; }
-@keyframes ticker { to { transform: translateX(-50%) skewY(1.2deg); } }
+@keyframes ticker { to { transform: translateX(-50%); } }
 
 /* ---------- Event cards ---------- */
 .events-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
@@ -351,8 +350,8 @@ a { color: inherit; text-decoration: none; }
 .feature p { color: var(--muted); margin: 0; }
 
 /* ---------- Crew / Partners ---------- */
-.crew-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-@media (max-width: 900px) { .crew-grid { grid-template-columns: repeat(2, 1fr); } }
+.crew-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 720px; }
+@media (max-width: 560px) { .crew-grid { grid-template-columns: 1fr; } }
 .crew {
   display: flex; align-items: center; gap: 14px; padding: 16px; background: var(--surface); border: 1px solid var(--line);
   transition: border-color .2s, transform .2s;

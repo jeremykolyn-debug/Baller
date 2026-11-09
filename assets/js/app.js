@@ -153,9 +153,7 @@
     $("crew-grid").innerHTML = B.staff.map(function (s) {
       return '<div class="crew"><div class="avatar">' + esc(s.name.charAt(0).toUpperCase()) + '</div><div><div class="n">' + esc(s.name) + '</div><div class="r">' + esc(s.role) + "</div></div></div>";
     }).join("");
-    var casters = {};
-    B.events.forEach(function (e) { ((e.talent || {}).Commentators || []).forEach(function (n) { casters[n] = 1; }); });
-    $("talent-strip").innerHTML = "<b>On the call:</b> " + Object.keys(casters).map(esc).join(" · ");
+    $("talent-strip").innerHTML = "<b>On the call:</b> " + (B.casters || []).map(esc).join(" · ");
 
     // Partners
     $("partners-grid").innerHTML = B.partners.map(function (p) {
